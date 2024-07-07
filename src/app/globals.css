@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --header: #F5F7FA;
+    --primary: #4CAF4F;
+    --secondary: #4D4D4D;
+    --text-primary: #717171;
+    --text-secondary: white;
+    --background-primary: #F5F7FA;
+    --background-secondary: white;
+  }
+
+  .dark {
+    --header: #1A1A1A;
+    --primary: #4CAF4F;
+    --secondary: white;
+    --text-primary: #717171;
+    --text-secondary: white;
+    --background-primary: #4D4D4D;
+    --background-secondary: #1A1A1A;
+  }
+}
+
+body{
+  background-color: var(--background-secondary) !important;
+}
+
+.dummyPage{
+  height: 70vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
